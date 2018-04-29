@@ -9,7 +9,7 @@
         <b>Date -</b> {{ launchDate }}
       </div>
       <div class="launch-time info-item">
-        <b>Time -</b> {{ launchTime }}
+        <b>Time (UTC) -</b> {{ launchTime }}
       </div>
       <div class="launch-site info-item">
         <b>Launch Site -</b> {{ launch.launch_site.site_name_long }}
