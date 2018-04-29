@@ -48,7 +48,6 @@ export default {
 
   .header {
     margin-top: 20px;
-    color: white;
     font-size: 30px;
   }
 
