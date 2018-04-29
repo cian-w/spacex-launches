@@ -32,8 +32,6 @@ export default {
   },
 
   mounted() {
-    // Create a new JavaScript Date object based on the timestamp
-    // multiplied by 1000 so that the argument is in milliseconds, not seconds.
     let a = new Date(this.launch.launch_date_unix * 1000);
     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     let year = a.getFullYear();
@@ -46,8 +44,6 @@ export default {
     let time = this.launch.launch_date_utc;
     let utcTime = time.split('T')[1];
     this.launchTime = utcTime.substring(0, utcTime.length - 1);
-
-
   }
 
 }

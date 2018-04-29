@@ -1,6 +1,8 @@
 <template>
   <div class="main">
-    <div class="header">SpaceX Launches</div>
+    <div class="header">
+      <img class="spacex-logo" src="../assets/spacexlogo.png">
+    </div>
 
     <div class="launch-wrapper">
       <div class="launch" v-for="launch in launches">
@@ -46,8 +48,13 @@ export default {
     flex-direction: column;
   }
 
+  .spacex-logo {
+    height: 100px;
+    width: 300px;
+  }
+
   .header {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 30px;
   }
 
