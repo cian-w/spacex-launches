@@ -1,7 +1,7 @@
 <template>
   <div class="launch-wrapper">
     <div class="launch-info">
-      <img class="rocket-image" src="../assets/falcon9.png">
+      <img class="rocket-image" src="https://s3.amazonaws.com/voicekit-images/falcon9.png">
       <div class="rocket-name info-item">
         <b>Rocket -</b> {{ launch.rocket.rocket_name }}
       </div>
