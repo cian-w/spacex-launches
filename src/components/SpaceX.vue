@@ -1,8 +1,11 @@
 <template>
-  <div class="main-wrapper">
-    SpaceX Launches
-    <div class="missions" v-for="launch in launches">
-      <mission-card :launch="launch"></mission-card>
+  <div class="main">
+    <div class="header">SpaceX Launches</div>
+
+    <div class="launch-wrapper">
+      <div class="launch" v-for="launch in launches">
+        <mission-card :launch="launch"></mission-card>
+      </div>
     </div>
   </div>
 </template>
@@ -38,8 +41,29 @@ export default {
 </script>
 
 <style scoped>
-  .main-wrapper {
-    /* color: white; */
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+  }
+
+  .launch-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .launch {
+    margin-top: 100px;
   }
 
 </style>
