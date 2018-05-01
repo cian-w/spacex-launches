@@ -1,7 +1,9 @@
 <template>
   <div class="launch-wrapper">
     <div class="launch-info">
-      <img class="rocket-image" src="https://s3.amazonaws.com/voicekit-images/falcon9.png">
+      <div class="rocket-image-wrapper">
+        <img class="rocket-image" src="https://s3.amazonaws.com/voicekit-images/falcon9.png">
+      </div>
       <div class="rocket-name info-item">
         <b>Rocket -</b> {{ launch.rocket.rocket_name }}
       </div>
@@ -71,13 +73,19 @@ export default {
     top: -70px;
   }
 
-  .rocket-image {
+  .rocket-image-wrapper {
     height: 140px;
     width: 140px;
     border-radius: 100%;
     border: 3px solid white;
     box-shadow: 0 10px 25px 0 rgba(0,0,0,.3);
     margin-bottom: 20px;
+  }
+
+  .rocket-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
   }
 
   .info-item {
