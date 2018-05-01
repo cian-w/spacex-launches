@@ -62,7 +62,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 60%;
+    max-width: 1000px;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -71,5 +73,13 @@ export default {
   .launch {
     margin-top: 100px;
   }
+
+  @media (max-width: 1067px) {
+    .launch-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
 
 </style>
