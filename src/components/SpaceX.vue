@@ -9,6 +9,7 @@
         <mission-card :launch="launch"></mission-card>
       </div>
     </div>
+    <a class="data-source" href="https://api.spacexdata.com/v2/launches/upcoming">Data Source</a>
   </div>
 </template>
 
@@ -72,6 +73,12 @@ export default {
 
   .launch {
     margin-top: 100px;
+  }
+
+  .data-source {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
   }
 
   @media (max-width: 1067px) {
